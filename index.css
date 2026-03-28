@@ -1,0 +1,152 @@
+:root {
+    
+   /* font-size */
+   --fs-level1: 2.8rem;
+   --fs-level2: 2.4rem;
+   --fs-level3: 1.7rem;
+   --fs-level4: 1.3rem;
+    
+   /* font-family */
+   --ff-primary: "";
+   
+   /* colors */
+   --color-primary: #7f00ff;
+   --color-secondary: #E4E2E7;
+   --color-bg: #fffff0;
+   
+ /* text-color */
+ --txt-color-primary: #fffafa; /* snow-white */
+ --txt-color-secondary: #273549;
+ --text-color-ternary: #1b1b1b; /* coffe-bean */
+   
+}
+
+/* box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* margin reset*/
+body, h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+/* setup body*/
+body {
+    line-height: 1.5rem;
+    min-height: 100vh;
+    font-family:Arial, Helvetica, sans-serif ;
+    background-image: url("bailey-burton-o5UlVmTwVz8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* make images easier to work with*/
+img,
+picture {
+    max-width: 100%;
+}
+
+/* make form elements easier to work with*/
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+
+/* remove animations for websites that opted out animation */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+main {
+    margin: 0.5rem;
+    background-color: var(--color-bg);
+}
+
+#cta {
+    background-color: var(--color-primary);
+    padding: 3rem;
+    color: var(--txt-color-primary);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+h1{
+    margin-bottom: 1.5rem;
+    font-size: var(--fs-level2);
+}
+
+input {
+    border: 2.5px solid var(--txt-color-primary);
+    background-color: inherit;
+    text-align: center;
+    height: 5rem;
+    width: 7rem;
+    font-size: var(--fs-level1);
+    color: var(--txt-color-primary);
+    margin: 1rem 0;
+    border-radius: 0.4rem;
+    font-weight: 800;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    border: none;
+    background-color: var(--txt-color-primary);
+    padding: 0.65rem 1.6rem;
+    border-radius: 0.4rem;
+    font-size: var(--fs-level4);
+    color: var(--text-color-ternary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+button:hover {
+    background-color: #e8e8e8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+#conversions {
+    padding: 1.5rem;
+}
+
+.conversion {
+   background-color: var(--color-secondary);
+   padding: 4rem;
+   margin: 1rem;
+   font-size: var(--fs-level4);
+   color: var(--txt-color-secondary);
+   border-radius: 0.45rem;
+}
+
+.conversion p {
+    font-size: var(--fs-level3);
+    margin-top: 1.5rem;
+    color: var(--text-color-ternary);
+}

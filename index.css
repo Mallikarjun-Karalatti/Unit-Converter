@@ -78,19 +78,20 @@ main {
 #cta {
     background-color: var(--color-primary);
     padding: 3rem;
-    color: var(--txt-color-primary);
+    color: var(--text-color-ternary);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
 
 h1{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-size: var(--fs-level2);
+    color: var(--txt-color-primary);
 }
 
 label {
     font-size: var(--fs-level3);
-    color: var(--txt-color-secondary);
+    color: var(--txt-color-primary);
     display: block;
     margin-bottom: 0.5rem;
 }

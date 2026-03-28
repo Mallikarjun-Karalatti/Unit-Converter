@@ -88,6 +88,13 @@ h1{
     font-size: var(--fs-level2);
 }
 
+label {
+    font-size: var(--fs-level3);
+    color: var(--txt-color-secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 input {
     border: 2.5px solid var(--txt-color-primary);
     background-color: inherit;
